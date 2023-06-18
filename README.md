@@ -1,12 +1,9 @@
-<img src=".erb/img/erb-banner.svg" width="100%" />
 
-<br>
-
-<h1>
+<h2>
  create a simple Electron.js application that tracks the user's desktop
 screen time and handles user idleness. The application should have a draggable widget that displays the
 screen time and idleness status.
-</h1>
+</h2>
 
 <br>
 
