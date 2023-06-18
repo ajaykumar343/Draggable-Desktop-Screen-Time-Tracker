@@ -6,13 +6,13 @@ function DraggableWidget() {
   const [isIdle, setIsIdle] = useState(false);
 
   useEffect(() => {
-    let timer;
-    let idleTimer;
+    let timer: NodeJS.Timer;
+    let idleTimer: NodeJS.Timeout;
 
     // Start the timer to track screen time
     const startTimer = () => {
       timer = setInterval(() => {
-        setScreenTime(prevTime => prevTime + 1);
+        setScreenTime((prevTime) => prevTime + 1);
       }, 1000);
     };
 
@@ -55,9 +55,13 @@ function DraggableWidget() {
   }, []);
 
   // Format the screen time into hh:mm:ss format
-  function formatTime(seconds) {
-    const hours = Math.floor(seconds / 3600).toString().padStart(2, '0');
-    const minutes = Math.floor((seconds % 3600) / 60).toString().padStart(2, '0');
+  function formatTime(seconds: number) {
+    const hours = Math.floor(seconds / 3600)
+      .toString()
+      .padStart(2, '0');
+    const minutes = Math.floor((seconds % 3600) / 60)
+      .toString()
+      .padStart(2, '0');
     const remainingSeconds = (seconds % 60).toString().padStart(2, '0');
 
     return `${hours}:${minutes}:${remainingSeconds}`;
