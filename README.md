@@ -3,7 +3,9 @@
 <br>
 
 <p>
-  Electron React Boilerplate uses <a href="https://electron.atom.io/">Electron</a>, <a href="https://facebook.github.io/react/">React</a>, <a href="https://github.com/reactjs/react-router">React Router</a>, <a href="https://webpack.js.org/">Webpack</a> and <a href="https://www.npmjs.com/package/react-refresh">React Fast Refresh</a>.
+ create a simple Electron.js application that tracks the user's desktop
+screen time and handles user idleness. The application should have a draggable widget that displays the
+screen time and idleness status.
 </p>
 
 <br>
