@@ -2,11 +2,11 @@
 
 <br>
 
-<p>
+<h1>
  create a simple Electron.js application that tracks the user's desktop
 screen time and handles user idleness. The application should have a draggable widget that displays the
 screen time and idleness status.
-</p>
+</h1>
 
 <br>
 
